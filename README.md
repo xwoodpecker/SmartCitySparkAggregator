@@ -1,4 +1,4 @@
 # PIM-SAR_WiSe21_Gruppe04 Lambda Architecture 
 
-![alt text](https://imgur.com/pjPTn5w) 
-![alt text](https://imgur.com/GzzAQj0)
+![Architecture](https://imgur.com/pjPTn5w) 
+![Sequenz Diagram](https://imgur.com/GzzAQj0)
