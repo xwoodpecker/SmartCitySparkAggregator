@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mqtt2kafkabridge
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+        app: mqtt2kafka
+  template:
+    metadata:
+      labels:
+        app: mqtt2kafka
+    spec:
+      containers:
+      - name: mqtt2kafka
+        image: marmaechler/mqtt2kafkabridge
+        env:
+        - name: KAFKA_BROKER_HOST
+          value: "kafka-service:9092"
+        - name: MQTT_BROKER_HOST
+          value: "rabbitmq-service:1883"
+        - name: MQTT_BROKER_USER
+          value: "guest"
+        - name: MQTT_BROKER_PASSWORD
+          value: "guest"
+        - name: MQTT_TOPIC_FILTER
+          value: "#"
+

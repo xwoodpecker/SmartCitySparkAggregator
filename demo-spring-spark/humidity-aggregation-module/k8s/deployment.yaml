@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: humidity-aggregation-spark-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: humidity-aggregation-spark-deployment
+  template:
+    metadata:
+      labels:
+        app: humidity-aggregation-spark-deployment
+    spec:
+      containers:
+        - name: humidity-aggregation-deployment
+          image: xwoodpecker/humidity-aggregation-spark-deployment
+          envFrom:
+            - configMapRef:
+                name: general-config
+            - secretRef:
+                name: general-secrets

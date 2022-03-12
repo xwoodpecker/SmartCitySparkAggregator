@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: temperature-batch-spark-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: temperature-batch-spark-deployment
+  template:
+    metadata:
+      labels:
+        app: temperature-batch-spark-deployment
+    spec:
+      containers:
+        - name: temperature-batch-deployment
+          image: xwoodpecker/temperature-batch-spark-deployment
+          envFrom:
+            - configMapRef:
+                name: general-config
+            - secretRef:
+                name: general-secrets

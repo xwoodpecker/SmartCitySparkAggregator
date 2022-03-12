@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: raw-temperature-spark-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: raw-temperature-spark-deployment
+  template:
+    metadata:
+      labels:
+        app: raw-temperature-spark-deployment
+    spec:
+      containers:
+        - name: raw-temperature-deployment
+          image: xwoodpecker/raw-temperature-spark-deployment
+          envFrom:
+            - configMapRef:
+                name: general-config
+            - secretRef:
+                name: general-secrets

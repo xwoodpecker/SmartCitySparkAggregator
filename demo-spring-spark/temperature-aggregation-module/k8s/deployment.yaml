@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: temperature-aggregation-spark-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: temperature-aggregation-spark-deployment
+  template:
+    metadata:
+      labels:
+        app: temperature-aggregation-spark-deployment
+    spec:
+      containers:
+        - name: temperature-aggregation-deployment
+          image: xwoodpecker/temperature-aggregation-spark-deployment
+          envFrom:
+            - configMapRef:
+                name: general-config
+            - secretRef:
+                name: general-secrets

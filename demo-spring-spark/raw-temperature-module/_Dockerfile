@@ -1,0 +1,7 @@
+# todo: switcheroo
+FROM bitnami/spark:latest
+COPY jars/*.jar $SPARK_HOME/jars
+# test if this worked (changed COPY to ADD)
+ADD src/main/resources  $SPARK_HOME/app/files/
+# this should not be needed:
+COPY target/spark-demo-1.0-SNAPSHOT-jar-with-dependencies.jar $SPARK_HOME/app/jars/app.jar

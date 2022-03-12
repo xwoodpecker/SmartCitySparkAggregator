@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: raw-humidity-spark-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: raw-humidity-spark-deployment
+  template:
+    metadata:
+      labels:
+        app: raw-humidity-spark-deployment
+    spec:
+      containers:
+        - name: raw-humidity-deployment
+          image: xwoodpecker/raw-humidity-spark-deployment
+          envFrom:
+            - configMapRef:
+                name: general-config
+            - secretRef:
+                name: general-secrets

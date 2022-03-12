@@ -1,0 +1,25 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: spark-role
+rules:
+- apiGroups: [""] # "" indicates the core API group
+  resources: ["pods"]
+  verbs: 
+  - "*"
+---
+apiVersion: rbac.authorization.k8s.io/v1
+# This role binding allows the "my-spark" serviceaccount to manage pods in the "pim-sar-ws21-g1" namespace.
+# You need to already have a Role named "spark-role" in that namespace.
+kind: RoleBinding
+metadata:
+  name: spark-rolebinding
+subjects:
+# You can specify more than one "subject"
+- kind: ServiceAccount
+  name: my-spark # "name" is case sensitive
+roleRef:
+# "roleRef" specifies the binding to a Role / ClusterRole
+  kind: Role #this must be Role or ClusterRole
+  name: spark-role # this must match the name of the Role or ClusterRole you wish to bind to
+  apiGroup: rbac.authorization.k8s.io

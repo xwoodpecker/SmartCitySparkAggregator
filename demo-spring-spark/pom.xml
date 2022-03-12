@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.htw.saar.smartcity</groupId>
+
+    <artifactId>spark-architecture</artifactId>
+
+    <version>0.1.0</version>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>temperature-aggregation-module</module>
+        <module>temperature-batch-module</module>
+        <module>raw-temperature-module</module>
+        <module>raw-humidity-module</module>
+        <module>humidity-aggregation-module</module>
+        <module>humidity-batch-module</module>
+    </modules>
+
+    <properties>
+
+        <maven.compiler.source>14</maven.compiler.source>
+
+        <maven.compiler.target>14</maven.compiler.target>
+
+    </properties>
+
+
+    <build>
+
+        <pluginManagement>
+
+            <plugins>
+
+                <plugin>
+
+                    <groupId>org.springframework.boot</groupId>
+
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+
+                </plugin>
+
+            </plugins>
+
+        </pluginManagement>
+
+    </build>
+
+</project>
