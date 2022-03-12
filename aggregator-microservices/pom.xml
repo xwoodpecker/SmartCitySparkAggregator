@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+      
+  <modelVersion>4.0.0</modelVersion>
+      
+  <groupId>de.htw.saar.smartcity</groupId>
+      
+  <artifactId>aggregator-microservices</artifactId>
+      
+  <version>0.1.0</version>
+      
+  <packaging>pom</packaging>
+      
+  <modules>
+            
+    <module>aggregator-lib</module>
+            
+    <module>aggregator-management-service</module>
+            
+    <module>raw-ms/temperature-service</module>
+    <module>raw-ms/humidity-service</module>
+    <module>raw-ms/water-service</module>
+    <module>raw-ms/picture-service</module>
+    <module>raw-ms/airquality-service</module>
+
+    <module>group-ms/dewpoint-service</module>
+    <module>group-ms/heatflux-service</module>
+    <module>group-ms/airquality-aggregator-service</module>
+    <module>group-ms/humidity-aggregator-service</module>
+    <module>group-ms/water-aggregator-service</module>
+    <module>group-ms/temperature-aggregator-service</module>
+
+    <module>prometheus-exporter-service</module>
+
+    <module>sensor-virtualization-service</module>
+
+    <module>historic-ms/historic-temperature-aggregator-service</module>
+    <module>historic-ms/historic-humidity-aggregator-service</module>
+    <module>historic-ms/historic-dewpoint-aggregator-service</module>
+    <module>historic-ms/historic-airquality-aggregator-service</module>
+      <module>aggregator-archetype</module>
+
+  </modules>
+      
+  <properties>
+            
+    <maven.compiler.source>14</maven.compiler.source>
+            
+    <maven.compiler.target>14</maven.compiler.target>
+        
+  </properties>
+
+      
+  <build>
+            
+    <pluginManagement>
+                  
+      <plugins>
+                        
+        <plugin>
+                              
+          <groupId>org.springframework.boot</groupId>
+                              
+          <artifactId>spring-boot-maven-plugin</artifactId>
+                          
+        </plugin>
+                    
+      </plugins>
+              
+    </pluginManagement>
+        
+  </build>
+  
+</project>

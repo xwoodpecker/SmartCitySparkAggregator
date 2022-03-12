@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dewpoint-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dewpoint-ms
+  template:
+    metadata:
+      labels:
+        app: dewpoint-ms
+    spec:
+      containers:
+        - name: dewpoint-ms
+          image: xwoodpecker/dewpoint-ms
+          envFrom:
+            - configMapRef:
+                name: general-config
+            - secretRef:
+                name: general-secrets
+          ports:
+            - containerPort: 8080
+              name: http
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: dewpoint-service
+  labels:
+    app: dewpoint-ms
+    monitoring: "true"
+spec:
+  type: ClusterIP
+  selector:
+    app: dewpoint-ms
+  ports:
+    - port: 8080
+      name: http
+
