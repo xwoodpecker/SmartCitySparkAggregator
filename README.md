@@ -7,7 +7,7 @@ They should consist of simple calculations, but also more complex formulas. A hi
 A large focus is placed on the representation of the individual Lambda components and their interaction. This allows a deeper understanding of the architectural concept and its advantages and disadvantages.
 Likewise, used technologies, their application, as well as relevant implementation details are presented.
 
-What can be found is a prototype, that was developed alongside the casestudy "Verwendung einer Lambda Architektur zur Sensordatenverarbeitung und -aggregation für IoT-Anwendungen". It is implemented with such a Lambda Architecture. Some information about the project can be found below.
+What can be found is a prototype, that was developed alongside the casestudy "Verwendung einer Lambda Architektur zur Sensordaten-verarbeitung und -aggregation für IoT-Anwendungen". It is implemented with such a Lambda Architecture. Some information about the project can be found below.
 
 ## Table of Contents
 - [Our Project](#our-project)
