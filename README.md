@@ -10,7 +10,7 @@ Likewise, used technologies, their application, as well as relevant implementati
 What can be found is a prototype, that was developed alongside the casestudy "Verwendung einer Lambda Architektur zurSensordatenverarbeitung und -aggregation für IoT-Anwendungen". It is implemented with such a Lambda Architecture. Some information about the project can be found below.
 
 ## Table of Contents
-
+- [Our Project](#our-project)
 - [Functional Requirements](#functional-requirements)
 - [Nonfunctional Requirements](#nonfunctional-requirements)
 - [Approach](#Generalized-Approach)
