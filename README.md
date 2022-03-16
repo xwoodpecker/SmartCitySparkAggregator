@@ -2,10 +2,10 @@
 
 ## Table of Contents
 
-- [Functional Requirements](#functionalrequirements)
-- [Nonfunctional Requirements](#nonfunctionalrequirements)
+- [Functional Requirements](#functional requirements)
+- [Nonfunctional Requirements](#nonfunctional requirements)
 - [Architecture](#architecture)
-- [Sequence Diagram](#sequencediagram)
+- [Sequence Diagram](#sequence diagram)
 
 
 ## Funtional Requirements:
