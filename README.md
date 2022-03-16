@@ -58,6 +58,9 @@
 ### Nice-To-Have-Requirements
 <ins>Batch storage technology:</ins> Hadoop can be used for the storage in the batch layer.
 
+## Generalized Approach
+![Approach](https://i.imgur.com/odZokS9.png)
+
 ## Architecture
 ![Architecture](https://i.imgur.com/GzzAQj0.png)
 
