@@ -40,7 +40,7 @@ __Data in spark:__ The data is split and accessed in separate spark applications
 
 __Kubernetes:__ The applications are created for the DSL cluster of the htw-saar. Therefore, the architecture of the application and all software modules must be deployed in Kubernetes.
 
-Externalized configuration: The application configuration must be externalized. Environment variables can be used for that. This enables the central management of all configurations over Kubernetes. Thus, making changes to entries like ports or addresses requires minimal time investment.
+__Externalized configuration:__ The application configuration must be externalized. Environment variables can be used for that. This enables the central management of all configurations over Kubernetes. Thus, making changes to entries like ports or addresses requires minimal time investment.
 
 ### Should-Have-Requirements
 __Performance:__ The aggregation of sensor data must take a maximum of 50ms under maximum load.
