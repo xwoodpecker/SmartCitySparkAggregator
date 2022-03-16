@@ -1,6 +1,6 @@
 # PIM-SAR_WiSe21_Gruppe04 Lambda Architecture 
 ## Our Project
-Year by year, the growth of Internet of Things leads to the invention of new, advanced technologies. How can these be used to process data from heterogeneous sensor networks?What challenges arise for systems with a wide variety of sensors and how can they be addressed? What are advantages and disadvantages of different architectures in this area?
+Year by year, the growth of Internet of Things leads to the invention of new, advanced technologies. How can these be used to process data from heterogeneous sensor networks? What challenges arise for systems with a wide variety of sensors and how can they be addressed? What are advantages and disadvantages of different architectures in this area?
 This project tries to answer these, and many other questions, that arise when designing a system for sensor data processing.
 The goal is the conception and implementation of a Lambda architecture for the processing of sensor readings and the formation of aggregates. The aggregates should be created in real time and over longer periods of time. 
 They should consist of simple calculations, but also more complex formulas. A high priority is given to the target platform Kubernetes, which is used to orchestrate containers. 
