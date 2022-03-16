@@ -4,7 +4,7 @@
 
 - [Functional Requirements](#functional-requirements)
 - [Nonfunctional Requirements](#nonfunctional-requirements)
-- [Approach](#GeneralizedApproach)
+- [Approach](#Generalized-Approach)
 - [Architecture](#architecture)
 - [Sequence Diagram](#sequence-diagram)
 
