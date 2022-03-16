@@ -1,7 +1,7 @@
 # PIM-SAR_WiSe21_Gruppe04 Lambda Architecture 
 
-##Functional and Nonfuntional Requirements:
-###Must-Have-Requirements
+## Functional and Nonfuntional Requirements:
+### Must-Have-Requirements
 Lambda architecture: A Lambda Architecture must be used. This architecture consists of
 a batch, a speed and a serving layer.
 Extensibility: Spark applications contain logic to compute sensor measurements or aggregates. The architecture revolves around creating new spark applications whenever
@@ -20,10 +20,10 @@ Kubernetes.
 Externalized configuration: The application configuration must be externalized. Environment variables can be used for that. This enables the central management of
 all configurations over Kubernetes. Thus, making changes to entries like ports or
 addresses requires minimal time investment.
-###Should-Have-Requirements
+### Should-Have-Requirements
 Performance: The aggregation of sensor data must take a maximum of 50ms under maximum load.
 Other Technologies: MinIO should be used as the data storage
-###Nice-To-Have-Requirements
+### Nice-To-Have-Requirements
 Batch storage technology: Hadoop can be used for the storage in the batch layer.
 ![Architecture](https://i.imgur.com/GzzAQj0.png)
 ![Sequenz Diagram](https://i.imgur.com/pjPTn5w.png)
