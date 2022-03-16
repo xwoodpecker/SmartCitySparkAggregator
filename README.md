@@ -1,5 +1,13 @@
 # PIM-SAR_WiSe21_Gruppe04 Lambda Architecture 
 
+## Table of Contents
+
+- [Functional Requirements](#functionalrequirements)
+- [Nonfunctional Requirements](#nonfunctionalrequirements)
+- [Architecture](#architecture)
+- [Sequence Diagram](#sequencediagram)
+
+
 ## Funtional Requirements:
 ### Must-Have-Requirements
 __Real time processing:__ The speed layer must save sensor measurements and compute aggregates of measurements in real time.
@@ -50,5 +58,8 @@ __Other Technologies:__ MinIO should be used as the data storage
 ### Nice-To-Have-Requirements
 __Batch storage technology:__ Hadoop can be used for the storage in the batch layer.
 
+## Architecture
 ![Architecture](https://i.imgur.com/GzzAQj0.png)
+
+## Sequence Diagram
 ![Sequenz Diagram](https://i.imgur.com/pjPTn5w.png)
