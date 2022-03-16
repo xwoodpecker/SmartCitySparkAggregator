@@ -9,8 +9,8 @@
 
 
 ## Functional-Requirements: 
-### Must-Have-Requirements
-__Real time processing:__ The speed layer must save sensor measurements and compute aggregates of measurements in real time.
+### Must-Have-Requirements:
+<ins>Real time processing:<\ins> The speed layer must save sensor measurements and compute aggregates of measurements in real time.
 
 __Historical data processing:__ The batch layer must sample data from the real-time measurements and aggregates. The computation creates minimums, maximums and averages over different time periods.
 
