@@ -2,13 +2,13 @@
 
 ## Table of Contents
 
-- [Functional Requirements](#functional requirements)
-- [Nonfunctional Requirements](#nonfunctional requirements)
+- [Functional Requirements](#functional-requirements)
+- [Nonfunctional Requirements](#nonfunctional-requirements)
 - [Architecture](#architecture)
-- [Sequence Diagram](#sequence diagram)
+- [Sequence Diagram](#sequence-diagram)
 
 
-## Funtional Requirements:
+## Funtional-Requirements: 
 ### Must-Have-Requirements
 __Real time processing:__ The speed layer must save sensor measurements and compute aggregates of measurements in real time.
 
@@ -30,7 +30,7 @@ __Sensor visualization:__ The application also supports other sensor types. Thes
 
 __Data visualization:__ An integration in the prometheus and grafana stack can be done. Then, measurements and aggregates can be displayed in various diagrams and dashboards.
 
-## Nonfuntional Requirements:
+## Nonfuntional-Requirements:
 ### Must-Have-Requirements
 __Lambda architecture:__ A Lambda Architecture must be used. This architecture consists of a batch, a speed and a serving layer.
 
@@ -61,5 +61,5 @@ __Batch storage technology:__ Hadoop can be used for the storage in the batch la
 ## Architecture
 ![Architecture](https://i.imgur.com/GzzAQj0.png)
 
-## Sequence Diagram
+## Sequence-Diagram
 ![Sequenz Diagram](https://i.imgur.com/pjPTn5w.png)
